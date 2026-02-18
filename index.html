@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MultiServiços PRO | Painel Master</title>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <button class="menu-toggle" onclick="toggleMenu()"><i class="fas fa-bars"></i></button>
+    <div class="sidebar-overlay" onclick="toggleMenu()"></div>
+
+    <div class="sidebar" id="sidebar">
+        <div class="logo-area-sidebar">
+            <img src="1771360521089.png" alt="Logo">
+        </div>
+        <nav>
+            <ul>
+                <li onclick="fecharEIr(abrirFormularioCadastro)"><i class="fas fa-plus-circle"></i> Cadastrar Perfil</li>
+                <li onclick="fecharEIr(abrirPainelMaster)"><i class="fas fa-user-shield"></i> Painel Master</li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="main-content">
+        <div class="header-banner">
+            <img src="1771360521089.png" alt="Logo" class="logo-principal">
+        </div>
+
+        <header>
+            <h1>O que você precisa hoje?</h1>
+            <div class="search-box">
+                <i class="fas fa-search"></i>
+                <input type="text" id="filtro" placeholder="Ex: Encanador, Eletricista...">
+            </div>
+        </header>
+
+        <section id="lista-profissionais" class="grid-profissionais"></section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
