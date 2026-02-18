@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MultiServiços PRO</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <button class="menu-toggle" onclick="toggleMenu()"><i class="fas fa-bars"></i></button>
+    <div class="sidebar-overlay" onclick="toggleMenu()"></div>
+
+    <div class="sidebar" id="sidebar">
+        <div class="logo-area-sidebar">
+            <img src="1771360521089.png" alt="Logo">
+        </div>
+        <nav>
+            <ul>
+                <li onclick="fecharEIr(() => location.reload())"><i class="fas fa-home"></i> Início</li>
+                <li onclick="fecharEIr(avisarCadastro)"><i class="fas fa-user-plus"></i> Ser um Parceiro</li>
+                <li onclick="fecharEIr(sobreNos)"><i class="fas fa-info-circle"></i> Sobre Nós</li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="main-content">
+        <div class="header-banner">
+            <img src="1771360521089.png" alt="Logo" class="logo-principal">
+        </div>
+
+        <header>
+            <h1>Nossos Profissionais</h1>
+            <p class="subtitle">Encontre especialistas prontos para te ajudar.</p>
+            <div class="search-box">
+                <i class="fas fa-search"></i>
+                <input type="text" id="filtro" placeholder="Buscar por nome ou serviço...">
+            </div>
+        </header>
+
+        <section id="lista-profissionais" class="grid-profissionais"></section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
