@@ -1,5 +1,5 @@
 // Substitua pelo link gerado no Termux pelo comando: ssh -R 80:localhost:3000 serveo.net
-const API_URL = 'https://SEU_LINK_DO_SERVEO_AQUI.serveo.net';
+const API_URL = 'https://e4eb3093b8180b9c-187-68-203-77.serveousercontent';
 const SENHA_MESTRE = "1234"; 
 
 let profissionaisGlobal = [];
