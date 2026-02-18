@@ -1,5 +1,5 @@
 // LINK DO SEU TERMUX (SERVEO)
-const API_URL = 'https://4b18008a298c1c72-187-68-203-77.serveousercontent.com';
+const API_URL = 'https://93ccac1c81cb544a-187-68-203-77.serveousercontent';
 const SENHA_MESTRE = "1234"; 
 
 let profissionaisGlobal = [];
